@@ -1,0 +1,7 @@
+type: google.api.Service
+config_version : 3
+
+http:
+  rules:
+  - selector: coolcar.TripService.GetTrip #proto的方法
+    get: /trip/{id} #用get去访问这个URL的时候调用上面那个方法 id是参数 是getrequest的id
